@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightblue;
+}
+
+ul li {
+    display: inline-block;
+    line-height: 100px;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: xx-large;
+    transition: all 0.3s to 0s;
+}
+
+ul li a:hover {
+    color:lavender;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+section div{
+    padding: 2em;
+    margin: 3em;
+}
+
+footer {
+    height: auto;
+    width: 100vw;
+    
+    
+}
+
+.footer-content {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+}
+
+table tr td {
+    padding: 1.5em;
+    font-size: large;
+}
+
+img {
+    border-radius: 50%;
+    
+}
+
+.About {
+    color: #999999;
+    font-size: xx-large;
+    margin-left: 0;
+}
+.Skills {
+    color: #999999;
+    font-size: xx-large;
+    margin-left: 0;
+    text-align: center;
+    position: relative;
+}
+
+.name {
+    color: #999999;
+    font-size: xx-large;
+    margin-left: 5.5em;
+}
+
+.Student {
+    color: #999999;
+    font-size: xx-large;
+    margin-left: 2.5em;
+}
+
+.mail {
+    margin-left: 7em;;
+}
+
+
+.divider {
+    height: 60em;
+    width: 5px;
+    background-color: lightgrey;
+    margin-top: 12.5em;
+}
+
+.last {
+    margin-bottom: 0.5em;
+}
+
+.Table {
+    font-size: x-large;
+    margin-left: 0;
+    text-align: left;
+}
+
+.Tableedu {
+    margin-right: 5em;
+
+}
+
+.td {
+    padding-right: 10em;
+    font-size:large;
+    text-align: left;
+    margin-right: 5em;
+}
+
+.cred {
+    color: #999999;
+}
+
+.interestList {
+    display:list-item;
+    justify-content: left;
+    background-color: transparent;
+
+}
+
+.listInterests {
+    display: list-item;
+    text-align: left;
+    padding-left: 0.2em ;
+    margin-right: 5em;
+}
+
+@media only screen and (max-width: 650px) {
+    .nav {
+    height: 70px;
+    }
+    
+    ul li a {
+    font-size: large;
+    }
+    
+    section {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    section div {
+    margin: 2em 0;
+    }
+    
+    .About, .Skills, .name, .Student {
+    font-size: large;
+    }
+    
+    .mail {
+    margin-left: 0;
+    }
+    
+    .divider {
+    height: 40em;
+    }
+    
+    .Table, .td {
+    font-size: medium;
+    }
+    
+    .Tableedu {
+    margin-right: 0;
+    }
+    
+    .listInterests {
+    padding-left: 0;
+    margin-right: 0;
+    }
+    }
+
+@media only screen and (max-width: 500px) {
+ul {
+display: block;
+text-align: center;
+}
+
+ul li {
+display: block;
+margin: 0 auto;
+line-height: normal;
+}
+
+ul li a {
+font-size: medium;
+padding: 10px 0;
+}
+
+section {
+display: block;
+text-align: center;
+}
+
+section div {
+padding: 1em;
+margin: 1em;
+}
+
+footer {
+height: auto;
+width: 100%;
+}
+
+.footer-content {
+text-align: center;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.About, .Skills, .name, .Student, .Table {
+font-size: medium;
+margin-left: 0;
+text-align: center;
+}
+
+.mail {
+margin-left: 0;
+text-align: center;
+}
+
+.divider {
+display: none;
+}
+
+.td {
+padding-right: 0;
+margin-right: 0;
+text-align: center;
+}
+
+.Tableedu {
+margin-right: 0;
+}
+
+.interestList, .listInterests {
+display: block;
+text-align: center;
+padding-left: 0;
+margin-right: 0;
+}
+}
